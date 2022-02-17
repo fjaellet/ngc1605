@@ -1,0 +1,6 @@
+*.out
+*.blg
+*.log
+*.gz
+__pycache__
+.ipynb_checkpoints
