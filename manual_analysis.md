@@ -34,11 +34,11 @@ We make a manual selection on the sky:
 But then we immediatley see that the 2 manually "sub-clusters" (apart from being heavily contaminated by the field) overlap in proper-motion space and in the CMD: hence they cannot be considered separate entities:
 
 We make a manual selection on the sky:
-![Proper-motion diagram](/im/topcat_step2ab.png "Proper-motion diagram")
+![Proper-motion diagram](/im/topcat_step2_ab.png "Proper-motion diagram")
 
-![Zoom into proper-motion diagram](/im/topcat_step2ab_zoom.png "Zoom into proper-motion diagram")
+![Zoom into proper-motion diagram](/im/topcat_step2zoom_ab.png "Zoom into proper-motion diagram")
 
-![CMD](/im/topcat_step4ab.png "CMD")
+![CMD](/im/topcat_step4_ab.png "CMD")
 
 All this is only easily visible thanks to the exquisite data quality of Gaia...
 
