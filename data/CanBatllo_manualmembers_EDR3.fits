@@ -1,0 +1,389 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                18317 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.4 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2022-02-28T15:26:36
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<RESOURCE>
+  <COOSYS ID="t11-coosys-1" epoch="J2016.0" system="ICRS"/>
+</RESOURCE>
+<TABLE name="1633527743585O-result.vot.gz" nrows="44">
+<PARAM arraysize="2" datatype="char" name="QUERY_STATUS" value="OK"/>
+<PARAM arraysize="156" datatype="char" name="QUERY" value=" SELECT * FROM gaiaedr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 68.75, 45.28, 0.5)) AND phot_g_mean_mag &lt; 19 AND parallax &lt; 1 ">
+<DESCRIPTION>SELECT * FROM gaiaedr3.gaia_source WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', 68.75, 45.28, 0.5)) AND phot_g_mean_mag &lt; 19 AND parallax &lt; 1</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="93" datatype="char" name="CAPTION" value="How to cite and acknowledge Gaia: https://gea.esac.esa.int/archive/documentation/credits.html">
+<DESCRIPTION>How to cite and acknowledge Gaia: https://gea.esac.esa.int/archive/documentation/credits.html</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="*" datatype="char" name="PAGE" value=""/>
+<PARAM arraysize="*" datatype="char" name="PAGE_SIZE" value=""/>
+<PARAM arraysize="14" datatype="char" name="JOBID" value="1633527743585O">
+<DESCRIPTION>1633527743585O</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="*" datatype="char" name="JOBNAME" value=""/>
+<FIELD datatype="long" name="solution_id" ucd="meta.version">
+<DESCRIPTION>Solution Identifier</DESCRIPTION>
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD arraysize="28" datatype="char" name="designation" ucd="meta.id;meta.main">
+<DESCRIPTION>Unique source designation (unique across all Data Releases)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="long" name="source_id" ucd="meta.id">
+<DESCRIPTION>Unique source identifier (unique within a particular Data Release)</DESCRIPTION>
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="long" name="random_index" ucd="meta.code">
+<DESCRIPTION>Random index used to select subsets</DESCRIPTION>
+<VALUES null='-9223372036854775808'/>
+</FIELD>
+<FIELD datatype="double" name="ref_epoch" ucd="meta.ref;time.epoch" unit="yr">
+<DESCRIPTION>Reference epoch</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ra" ref="t11-coosys-1" ucd="pos.eq.ra;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C1">
+<DESCRIPTION>Right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_error" ucd="stat.error;pos.eq.ra" unit="mas">
+<DESCRIPTION>Standard error of right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dec" ref="t11-coosys-1" ucd="pos.eq.dec;meta.main" unit="deg" utype="Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C2">
+<DESCRIPTION>Declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dec_error" ucd="stat.error;pos.eq.dec" unit="mas">
+<DESCRIPTION>Standard error of declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="parallax" ucd="pos.parallax.trig" unit="mas">
+<DESCRIPTION>Parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_error" ucd="stat.error;pos.parallax.trig" unit="mas">
+<DESCRIPTION>Standard error of parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_over_error" ucd="stat.snr;pos.parallax.trig">
+<DESCRIPTION>Parallax divided by its standard error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pm" ucd="pos.pm;pos.eq" unit="mas.yr**-1">
+<DESCRIPTION>Total proper motion</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmra" ucd="pos.pm;pos.eq.ra" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmra_error" ucd="stat.error;pos.pm;pos.eq.ra" unit="mas.yr**-1">
+<DESCRIPTION>Standard error of proper motion in right ascension direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="pmdec" ucd="pos.pm;pos.eq.dec" unit="mas.yr**-1">
+<DESCRIPTION>Proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmdec_error" ucd="stat.error;pos.pm;pos.eq.dec" unit="mas.yr**-1">
+<DESCRIPTION>Standard error of proper motion in declination direction</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_dec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between right ascension and declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_parallax_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between right ascension and parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_pmra_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between right ascension and proper motion in right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between right ascension and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dec_parallax_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between declination and parallax</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dec_pmra_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between declination and proper motion in right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dec_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between declination and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_pmra_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between parallax and proper motion in right ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between parallax and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmra_pmdec_corr" ucd="stat.correlation">
+<DESCRIPTION>Correlation between proper motion in right ascension and proper motion in declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_obs_al" ucd="meta.number">
+<DESCRIPTION>Total number of observations AL</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_obs_ac" ucd="meta.number">
+<DESCRIPTION>Total number of observations AC</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_good_obs_al" ucd="meta.number">
+<DESCRIPTION>Number of good observations AL</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="astrometric_n_bad_obs_al" ucd="meta.number">
+<DESCRIPTION>Number of bad observations AL</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="astrometric_gof_al" ucd="stat.fit.goodness">
+<DESCRIPTION>Goodness of fit statistic of model wrt along-scan observations</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="astrometric_chi2_al" ucd="stat.fit.chi2">
+<DESCRIPTION>AL chi-square value</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="astrometric_excess_noise" ucd="stat.value" unit="mas">
+<DESCRIPTION>Excess noise of the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="astrometric_excess_noise_sig" ucd="stat.value">
+<DESCRIPTION>Significance of excess noise</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="astrometric_params_solved" ucd="meta.number">
+<DESCRIPTION>Which parameters have been solved for?</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="boolean" name="astrometric_primary_flag" ucd="meta.code">
+<DESCRIPTION>Primary or seconday</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="nu_eff_used_in_astrometry" ucd="em.wavenumber" unit="um**-1">
+<DESCRIPTION>Effective wavenumber of the source used in the astrometric solution</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pseudocolour" ucd="em.wavenumber" unit="um**-1">
+<DESCRIPTION>Astrometrically estimated pseudocolour of the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pseudocolour_error" ucd="stat.error;em.wavenumber" unit="um**-1">
+<DESCRIPTION>Standard error of the pseudocolour of the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ra_pseudocolour_corr" ucd="stat.correlation;em.wavenumber;pos.eq.ra">
+<DESCRIPTION>Correlation between right ascension and pseudocolour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dec_pseudocolour_corr" ucd="stat.correlation;em.wavenumber;pos.eq.dec">
+<DESCRIPTION>Correlation between declination and pseudocolour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="parallax_pseudocolour_corr" ucd="stat.correlation;em.wavenumber;pos.parallax">
+<DESCRIPTION>Correlation between parallax and pseudocolour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmra_pseudocolour_corr" ucd="stat.correlation;em.wavenumber;pos.pm;pos.eq.ra">
+<DESCRIPTION>Correlation between proper motion in right asension and pseudocolour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pmdec_pseudocolour_corr" ucd="stat.correlation;em.wavenumber;pos.pm;pos.eq.dec">
+<DESCRIPTION>Correlation between proper motion in declination and pseudocolour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="astrometric_matched_transits" ucd="meta.number">
+<DESCRIPTION>Matched FOV transits used in the AGIS solution</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="visibility_periods_used" ucd="meta.number">
+<DESCRIPTION>Number of visibility periods used in Astrometric solution</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="astrometric_sigma5d_max" ucd="stat;pos.errorEllipse" unit="mas">
+<DESCRIPTION>The longest semi-major axis of the 5-d error ellipsoid</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="matched_transits" ucd="meta.number">
+<DESCRIPTION>The number of transits matched to this source</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="new_matched_transits" ucd="meta.number">
+<DESCRIPTION>The number of transits newly incorporated into an existing source in the current cycle</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="matched_transits_removed" ucd="meta.number">
+<DESCRIPTION>The number of transits removed from an existing source in the current cycle</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="ipd_gof_harmonic_amplitude" ucd="stat.value">
+<DESCRIPTION>Amplitude of the IPD GoF versus position angle of scan</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="ipd_gof_harmonic_phase" ucd="pos.posAng;stat.value" unit="deg">
+<DESCRIPTION>Phase of the IPD GoF versus position angle of scan</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="ipd_frac_multi_peak" ucd="stat.value">
+<DESCRIPTION>Percent of successful-IPD windows with more than one peak</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="ipd_frac_odd_win" ucd="stat.value">
+<DESCRIPTION>Percent of transits with truncated windows or multiple gate</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="ruwe" ucd="stat.error">
+<DESCRIPTION>Renormalised unit weight error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_strength_k1" ucd="stat.value">
+<DESCRIPTION>Degree of concentration of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_strength_k2" ucd="stat.value">
+<DESCRIPTION>Degree of concentration of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_strength_k3" ucd="stat.value">
+<DESCRIPTION>Degree of concentration of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_strength_k4" ucd="stat.value">
+<DESCRIPTION>Degree of concentration of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_mean_k1" ucd="pos.posAng;stat.mean" unit="deg">
+<DESCRIPTION>Mean position angle of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_mean_k2" ucd="pos.posAng;stat.mean" unit="deg">
+<DESCRIPTION>Mean position angle of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_mean_k3" ucd="pos.posAng;stat.mean" unit="deg">
+<DESCRIPTION>Mean position angle of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="scan_direction_mean_k4" ucd="pos.posAng;stat.mean" unit="deg">
+<DESCRIPTION>Mean position angle of scan directions across the source</DESCRIPTION>
+</FIELD>
+<FIELD datatype="boolean" name="duplicated_source" ucd="meta.code.status">
+<DESCRIPTION>Source with multiple source identifiers</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="phot_g_n_obs" ucd="meta.number">
+<DESCRIPTION>Number of observations contributing to G photometry</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_g_mean_flux" ucd="phot.flux;em.opt" unit="'electron'.s**-1">
+<DESCRIPTION>G-band mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_g_mean_flux_error" ucd="stat.error;phot.flux;em.opt" unit="'electron'.s**-1">
+<DESCRIPTION>Error on G-band mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_g_mean_flux_over_error" ucd="stat.snr;phot.flux;em.opt">
+<DESCRIPTION>G-band mean flux divided by its error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_g_mean_mag" ucd="phot.mag;em.opt" unit="mag">
+<DESCRIPTION>G-band mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="phot_bp_n_obs" ucd="meta.number">
+<DESCRIPTION>Number of observations contributing to BP photometry</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_bp_mean_flux" ucd="phot.flux;em.opt.B" unit="'electron'.s**-1">
+<DESCRIPTION>Integrated BP mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_bp_mean_flux_error" ucd="stat.error;phot.flux;em.opt.B" unit="'electron'.s**-1">
+<DESCRIPTION>Error on the integrated BP mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_bp_mean_flux_over_error" ucd="stat.snr;phot.flux;em.opt.B">
+<DESCRIPTION>Integrated BP mean flux divided by its error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_bp_mean_mag" ucd="phot.mag;em.opt.B" unit="mag">
+<DESCRIPTION>Integrated BP mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="phot_rp_n_obs" ucd="meta.number">
+<DESCRIPTION>Number of observations contributing to RP photometry</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="phot_rp_mean_flux" ucd="phot.flux;em.opt.R" unit="'electron'.s**-1">
+<DESCRIPTION>Integrated RP mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_rp_mean_flux_error" ucd="stat.error;phot.flux;em.opt.R" unit="'electron'.s**-1">
+<DESCRIPTION>Error on the integrated RP mean flux</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_rp_mean_flux_over_error" ucd="stat.snr;phot.flux;em.opt.R">
+<DESCRIPTION>Integrated RP mean flux divided by its error</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="phot_rp_mean_mag" ucd="phot.mag;em.opt.R" unit="mag">
+<DESCRIPTION>Integrated RP mean magnitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="phot_bp_n_contaminated_transits" ucd="meta.number">
+<DESCRIPTION>Number of BP contaminated transits</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_bp_n_blended_transits" ucd="meta.number">
+<DESCRIPTION>Number of BP blended transits</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_rp_n_contaminated_transits" ucd="meta.number">
+<DESCRIPTION>Number of RP contaminated transits</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_rp_n_blended_transits" ucd="meta.number">
+<DESCRIPTION>Number of RP blended transits</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="phot_proc_mode" ucd="meta.code">
+<DESCRIPTION>Photometry processing mode</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="phot_bp_rp_excess_factor" ucd="arith.factor;phot.flux;em.opt">
+<DESCRIPTION>BP/RP excess factor</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="bp_rp" ucd="phot.color;em.opt.B;em.opt.R" unit="mag">
+<DESCRIPTION>BP - RP colour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="bp_g" ucd="phot.color;em.opt.B;em.opt" unit="mag">
+<DESCRIPTION>BP - G colour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="g_rp" ucd="phot.color;em.opt;em.opt.R" unit="mag">
+<DESCRIPTION>G - RP colour</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dr2_radial_velocity" ucd="spect.dopplerVeloc.opt;em.opt.I" unit="km.s**-1">
+<DESCRIPTION>Radial velocity from Gaia DR2</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dr2_radial_velocity_error" ucd="stat.error;spect.dopplerVeloc.opt;em.opt.I" unit="km.s**-1">
+<DESCRIPTION>Radial velocity error from Gaia DR2</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="dr2_rv_nb_transits" ucd="meta.number">
+<DESCRIPTION>Number of transits used to compute radial velocity in Gaia DR2</DESCRIPTION>
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="dr2_rv_template_teff" ucd="stat.fit.param" unit="K">
+<DESCRIPTION>Teff of the template used to compute radial velocity in Gaia DR2</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dr2_rv_template_logg" ucd="stat.fit.param" unit="log(cm.s**-2)">
+<DESCRIPTION>logg of the template used to compute radial velocity in Gaia DR2</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="dr2_rv_template_fe_h" ucd="stat.fit.param" unit="'dex'">
+<DESCRIPTION>Fe/H of the template used to compute radial velocity in Gaia DR2</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="l" ucd="pos.galactic.lon" unit="deg">
+<DESCRIPTION>Galactic longitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="b" ucd="pos.galactic.lat" unit="deg">
+<DESCRIPTION>Galactic latitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ecl_lon" ucd="pos.ecliptic.lon" unit="deg">
+<DESCRIPTION>Ecliptic longitude</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="ecl_lat" ucd="pos.ecliptic.lat" unit="deg">
+<DESCRIPTION>Ecliptic latitude</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                  436 / width of table in bytes                        NAXIS2  =                   44 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                   99 / number of columns                              EXTNAME = '1633527743585O-result.vot.gz' / table name                           TTYPE1  = 'solution_id'        / label for column 1                             TFORM1  = 'K       '           / format for column 1                            TNULL1  = -9223372036854775808 / blank value for column 1                       TCOMM1  = 'Solution Identifier'                                                 TUCD1   = 'meta.version'                                                        TTYPE2  = 'designation'        / label for column 2                             TFORM2  = '28A     '           / format for column 2                            TCOMM2  = 'Unique source designation (unique across all Data Releases)'         TUCD2   = 'meta.id;meta.main'                                                   TTYPE3  = 'source_id'          / label for column 3                             TFORM3  = 'K       '           / format for column 3                            TNULL3  = -9223372036854775808 / blank value for column 3                       TCOMM3  = 'Unique source identifier (unique within a particular Data Release)'  TUCD3   = 'meta.id '                                                            TTYPE4  = 'random_index'       / label for column 4                             TFORM4  = 'K       '           / format for column 4                            TNULL4  = -9223372036854775808 / blank value for column 4                       TCOMM4  = 'Random index used to select subsets'                                 TUCD4   = 'meta.code'                                                           TTYPE5  = 'ref_epoch'          / label for column 5                             TFORM5  = 'D       '           / format for column 5                            TUNIT5  = 'yr      '           / units for column 5                             TCOMM5  = 'Reference epoch'                                                     TUCD5   = 'meta.ref;time.epoch'                                                 TTYPE6  = 'ra      '           / label for column 6                             TFORM6  = 'D       '           / format for column 6                            TUNIT6  = 'deg     '           / units for column 6                             TCOMM6  = 'Right ascension'                                                     TUCD6   = 'pos.eq.ra;meta.main'                                                 TUTYP6  = 'Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C1'       TTYPE7  = 'ra_error'           / label for column 7                             TFORM7  = 'E       '           / format for column 7                            TUNIT7  = 'mas     '           / units for column 7                             TCOMM7  = 'Standard error of right ascension'                                   TUCD7   = 'stat.error;pos.eq.ra'                                                TTYPE8  = 'dec     '           / label for column 8                             TFORM8  = 'D       '           / format for column 8                            TUNIT8  = 'deg     '           / units for column 8                             TCOMM8  = 'Declination'                                                         TUCD8   = 'pos.eq.dec;meta.main'                                                TUTYP8  = 'Char.SpatialAxis.Coverage.Location.Coord.Position2D.Value2.C2'       TTYPE9  = 'dec_error'          / label for column 9                             TFORM9  = 'E       '           / format for column 9                            TUNIT9  = 'mas     '           / units for column 9                             TCOMM9  = 'Standard error of declination'                                       TUCD9   = 'stat.error;pos.eq.dec'                                               TTYPE10 = 'parallax'           / label for column 10                            TFORM10 = 'D       '           / format for column 10                           TUNIT10 = 'mas     '           / units for column 10                            TCOMM10 = 'Parallax'                                                            TUCD10  = 'pos.parallax.trig'                                                   TTYPE11 = 'parallax_error'     / label for column 11                            TFORM11 = 'E       '           / format for column 11                           TUNIT11 = 'mas     '           / units for column 11                            TCOMM11 = 'Standard error of parallax'                                          TUCD11  = 'stat.error;pos.parallax.trig'                                        TTYPE12 = 'parallax_over_error' / label for column 12                           TFORM12 = 'E       '           / format for column 12                           TCOMM12 = 'Parallax divided by its standard error'                              TUCD12  = 'stat.snr;pos.parallax.trig'                                          TTYPE13 = 'pm      '           / label for column 13                            TFORM13 = 'E       '           / format for column 13                           TUNIT13 = 'mas.yr**-1'         / units for column 13                            TCOMM13 = 'Total proper motion'                                                 TUCD13  = 'pos.pm;pos.eq'                                                       TTYPE14 = 'pmra    '           / label for column 14                            TFORM14 = 'D       '           / format for column 14                           TUNIT14 = 'mas.yr**-1'         / units for column 14                            TCOMM14 = 'Proper motion in right ascension direction'                          TUCD14  = 'pos.pm;pos.eq.ra'                                                    TTYPE15 = 'pmra_error'         / label for column 15                            TFORM15 = 'E       '           / format for column 15                           TUNIT15 = 'mas.yr**-1'         / units for column 15                            TCOMM15 = 'Standard error of proper motion in right ascension direction'        TUCD15  = 'stat.error;pos.pm;pos.eq.ra'                                         TTYPE16 = 'pmdec   '           / label for column 16                            TFORM16 = 'D       '           / format for column 16                           TUNIT16 = 'mas.yr**-1'         / units for column 16                            TCOMM16 = 'Proper motion in declination direction'                              TUCD16  = 'pos.pm;pos.eq.dec'                                                   TTYPE17 = 'pmdec_error'        / label for column 17                            TFORM17 = 'E       '           / format for column 17                           TUNIT17 = 'mas.yr**-1'         / units for column 17                            TCOMM17 = 'Standard error of proper motion in declination direction'            TUCD17  = 'stat.error;pos.pm;pos.eq.dec'                                        TTYPE18 = 'ra_dec_corr'        / label for column 18                            TFORM18 = 'E       '           / format for column 18                           TCOMM18 = 'Correlation between right ascension and declination'                 TUCD18  = 'stat.correlation'                                                    TTYPE19 = 'ra_parallax_corr'   / label for column 19                            TFORM19 = 'E       '           / format for column 19                           TCOMM19 = 'Correlation between right ascension and parallax'                    TUCD19  = 'stat.correlation'                                                    TTYPE20 = 'ra_pmra_corr'       / label for column 20                            TFORM20 = 'E       '           / format for column 20                           TUCD20  = 'stat.correlation'                                                    TTYPE21 = 'ra_pmdec_corr'      / label for column 21                            TFORM21 = 'E       '           / format for column 21                           TCOMM21 = 'Correlation between right ascension and proper motion in declination'TUCD21  = 'stat.correlation'                                                    TTYPE22 = 'dec_parallax_corr'  / label for column 22                            TFORM22 = 'E       '           / format for column 22                           TCOMM22 = 'Correlation between declination and parallax'                        TUCD22  = 'stat.correlation'                                                    TTYPE23 = 'dec_pmra_corr'      / label for column 23                            TFORM23 = 'E       '           / format for column 23                           TCOMM23 = 'Correlation between declination and proper motion in right ascension'TUCD23  = 'stat.correlation'                                                    TTYPE24 = 'dec_pmdec_corr'     / label for column 24                            TFORM24 = 'E       '           / format for column 24                           TCOMM24 = 'Correlation between declination and proper motion in declination'    TUCD24  = 'stat.correlation'                                                    TTYPE25 = 'parallax_pmra_corr' / label for column 25                            TFORM25 = 'E       '           / format for column 25                           TCOMM25 = 'Correlation between parallax and proper motion in right ascension'   TUCD25  = 'stat.correlation'                                                    TTYPE26 = 'parallax_pmdec_corr' / label for column 26                           TFORM26 = 'E       '           / format for column 26                           TCOMM26 = 'Correlation between parallax and proper motion in declination'       TUCD26  = 'stat.correlation'                                                    TTYPE27 = 'pmra_pmdec_corr'    / label for column 27                            TFORM27 = 'E       '           / format for column 27                           TUCD27  = 'stat.correlation'                                                    TTYPE28 = 'astrometric_n_obs_al' / label for column 28                          TFORM28 = 'I       '           / format for column 28                           TNULL28 =               -32768 / blank value for column 28                      TCOMM28 = 'Total number of observations AL'                                     TUCD28  = 'meta.number'                                                         TTYPE29 = 'astrometric_n_obs_ac' / label for column 29                          TFORM29 = 'I       '           / format for column 29                           TNULL29 =               -32768 / blank value for column 29                      TCOMM29 = 'Total number of observations AC'                                     TUCD29  = 'meta.number'                                                         TTYPE30 = 'astrometric_n_good_obs_al' / label for column 30                     TFORM30 = 'I       '           / format for column 30                           TNULL30 =               -32768 / blank value for column 30                      TCOMM30 = 'Number of good observations AL'                                      TUCD30  = 'meta.number'                                                         TTYPE31 = 'astrometric_n_bad_obs_al' / label for column 31                      TFORM31 = 'I       '           / format for column 31                           TNULL31 =               -32768 / blank value for column 31                      TCOMM31 = 'Number of bad observations AL'                                       TUCD31  = 'meta.number'                                                         TTYPE32 = 'astrometric_gof_al' / label for column 32                            TFORM32 = 'E       '           / format for column 32                           TCOMM32 = 'Goodness of fit statistic of model wrt along-scan observations'      TUCD32  = 'stat.fit.goodness'                                                   TTYPE33 = 'astrometric_chi2_al' / label for column 33                           TFORM33 = 'E       '           / format for column 33                           TCOMM33 = 'AL chi-square value'                                                 TUCD33  = 'stat.fit.chi2'                                                       TTYPE34 = 'astrometric_excess_noise' / label for column 34                      TFORM34 = 'E       '           / format for column 34                           TUNIT34 = 'mas     '           / units for column 34                            TCOMM34 = 'Excess noise of the source'                                          TUCD34  = 'stat.value'                                                          TTYPE35 = 'astrometric_excess_noise_sig' / label for column 35                  TFORM35 = 'E       '           / format for column 35                           TCOMM35 = 'Significance of excess noise'                                        TUCD35  = 'stat.value'                                                          TTYPE36 = 'astrometric_params_solved' / label for column 36                     TFORM36 = 'I       '           / format for column 36                           TNULL36 =               -32768 / blank value for column 36                      TCOMM36 = 'Which parameters have been solved for?'                              TUCD36  = 'meta.number'                                                         TTYPE37 = 'astrometric_primary_flag' / label for column 37                      TFORM37 = 'L       '           / format for column 37                           TCOMM37 = 'Primary or seconday'                                                 TUCD37  = 'meta.code'                                                           TTYPE38 = 'nu_eff_used_in_astrometry' / label for column 38                     TFORM38 = 'E       '           / format for column 38                           TUNIT38 = 'um**-1  '           / units for column 38                            TCOMM38 = 'Effective wavenumber of the source used in the astrometric solution' TUCD38  = 'em.wavenumber'                                                       TTYPE39 = 'pseudocolour'       / label for column 39                            TFORM39 = 'E       '           / format for column 39                           TUNIT39 = 'um**-1  '           / units for column 39                            TCOMM39 = 'Astrometrically estimated pseudocolour of the source'                TUCD39  = 'em.wavenumber'                                                       TTYPE40 = 'pseudocolour_error' / label for column 40                            TFORM40 = 'E       '           / format for column 40                           TUNIT40 = 'um**-1  '           / units for column 40                            TCOMM40 = 'Standard error of the pseudocolour of the source'                    TUCD40  = 'stat.error;em.wavenumber'                                            TTYPE41 = 'ra_pseudocolour_corr' / label for column 41                          TFORM41 = 'E       '           / format for column 41                           TCOMM41 = 'Correlation between right ascension and pseudocolour'                TUCD41  = 'stat.correlation;em.wavenumber;pos.eq.ra'                            TTYPE42 = 'dec_pseudocolour_corr' / label for column 42                         TFORM42 = 'E       '           / format for column 42                           TCOMM42 = 'Correlation between declination and pseudocolour'                    TUCD42  = 'stat.correlation;em.wavenumber;pos.eq.dec'                           TTYPE43 = 'parallax_pseudocolour_corr' / label for column 43                    TFORM43 = 'E       '           / format for column 43                           TCOMM43 = 'Correlation between parallax and pseudocolour'                       TUCD43  = 'stat.correlation;em.wavenumber;pos.parallax'                         TTYPE44 = 'pmra_pseudocolour_corr' / label for column 44                        TFORM44 = 'E       '           / format for column 44                           TCOMM44 = 'Correlation between proper motion in right asension and pseudocolour'TUCD44  = 'stat.correlation;em.wavenumber;pos.pm;pos.eq.ra'                     TTYPE45 = 'pmdec_pseudocolour_corr' / label for column 45                       TFORM45 = 'E       '           / format for column 45                           TCOMM45 = 'Correlation between proper motion in declination and pseudocolour'   TUCD45  = 'stat.correlation;em.wavenumber;pos.pm;pos.eq.dec'                    TTYPE46 = 'astrometric_matched_transits' / label for column 46                  TFORM46 = 'I       '           / format for column 46                           TNULL46 =               -32768 / blank value for column 46                      TCOMM46 = 'Matched FOV transits used in the AGIS solution'                      TUCD46  = 'meta.number'                                                         TTYPE47 = 'visibility_periods_used' / label for column 47                       TFORM47 = 'I       '           / format for column 47                           TNULL47 =               -32768 / blank value for column 47                      TCOMM47 = 'Number of visibility periods used in Astrometric solution'           TUCD47  = 'meta.number'                                                         TTYPE48 = 'astrometric_sigma5d_max' / label for column 48                       TFORM48 = 'E       '           / format for column 48                           TUNIT48 = 'mas     '           / units for column 48                            TCOMM48 = 'The longest semi-major axis of the 5-d error ellipsoid'              TUCD48  = 'stat;pos.errorEllipse'                                               TTYPE49 = 'matched_transits'   / label for column 49                            TFORM49 = 'I       '           / format for column 49                           TNULL49 =               -32768 / blank value for column 49                      TCOMM49 = 'The number of transits matched to this source'                       TUCD49  = 'meta.number'                                                         TTYPE50 = 'new_matched_transits' / label for column 50                          TFORM50 = 'I       '           / format for column 50                           TNULL50 =               -32768 / blank value for column 50                      TUCD50  = 'meta.number'                                                         TTYPE51 = 'matched_transits_removed' / label for column 51                      TFORM51 = 'I       '           / format for column 51                           TNULL51 =               -32768 / blank value for column 51                      TUCD51  = 'meta.number'                                                         TTYPE52 = 'ipd_gof_harmonic_amplitude' / label for column 52                    TFORM52 = 'E       '           / format for column 52                           TCOMM52 = 'Amplitude of the IPD GoF versus position angle of scan'              TUCD52  = 'stat.value'                                                          TTYPE53 = 'ipd_gof_harmonic_phase' / label for column 53                        TFORM53 = 'E       '           / format for column 53                           TUNIT53 = 'deg     '           / units for column 53                            TCOMM53 = 'Phase of the IPD GoF versus position angle of scan'                  TUCD53  = 'pos.posAng;stat.value'                                               TTYPE54 = 'ipd_frac_multi_peak' / label for column 54                           TFORM54 = 'I       '           / format for column 54                           TNULL54 =               -32768 / blank value for column 54                      TCOMM54 = 'Percent of successful-IPD windows with more than one peak'           TUCD54  = 'stat.value'                                                          TTYPE55 = 'ipd_frac_odd_win'   / label for column 55                            TFORM55 = 'I       '           / format for column 55                           TNULL55 =               -32768 / blank value for column 55                      TCOMM55 = 'Percent of transits with truncated windows or multiple gate'         TUCD55  = 'stat.value'                                                          TTYPE56 = 'ruwe    '           / label for column 56                            TFORM56 = 'E       '           / format for column 56                           TCOMM56 = 'Renormalised unit weight error'                                      TUCD56  = 'stat.error'                                                          TTYPE57 = 'scan_direction_strength_k1' / label for column 57                    TFORM57 = 'E       '           / format for column 57                           TCOMM57 = 'Degree of concentration of scan directions across the source'        TUCD57  = 'stat.value'                                                          TTYPE58 = 'scan_direction_strength_k2' / label for column 58                    TFORM58 = 'E       '           / format for column 58                           TCOMM58 = 'Degree of concentration of scan directions across the source'        TUCD58  = 'stat.value'                                                          TTYPE59 = 'scan_direction_strength_k3' / label for column 59                    TFORM59 = 'E       '           / format for column 59                           TCOMM59 = 'Degree of concentration of scan directions across the source'        TUCD59  = 'stat.value'                                                          TTYPE60 = 'scan_direction_strength_k4' / label for column 60                    TFORM60 = 'E       '           / format for column 60                           TCOMM60 = 'Degree of concentration of scan directions across the source'        TUCD60  = 'stat.value'                                                          TTYPE61 = 'scan_direction_mean_k1' / label for column 61                        TFORM61 = 'E       '           / format for column 61                           TUNIT61 = 'deg     '           / units for column 61                            TCOMM61 = 'Mean position angle of scan directions across the source'            TUCD61  = 'pos.posAng;stat.mean'                                                TTYPE62 = 'scan_direction_mean_k2' / label for column 62                        TFORM62 = 'E       '           / format for column 62                           TUNIT62 = 'deg     '           / units for column 62                            TCOMM62 = 'Mean position angle of scan directions across the source'            TUCD62  = 'pos.posAng;stat.mean'                                                TTYPE63 = 'scan_direction_mean_k3' / label for column 63                        TFORM63 = 'E       '           / format for column 63                           TUNIT63 = 'deg     '           / units for column 63                            TCOMM63 = 'Mean position angle of scan directions across the source'            TUCD63  = 'pos.posAng;stat.mean'                                                TTYPE64 = 'scan_direction_mean_k4' / label for column 64                        TFORM64 = 'E       '           / format for column 64                           TUNIT64 = 'deg     '           / units for column 64                            TCOMM64 = 'Mean position angle of scan directions across the source'            TUCD64  = 'pos.posAng;stat.mean'                                                TTYPE65 = 'duplicated_source'  / label for column 65                            TFORM65 = 'L       '           / format for column 65                           TCOMM65 = 'Source with multiple source identifiers'                             TUCD65  = 'meta.code.status'                                                    TTYPE66 = 'phot_g_n_obs'       / label for column 66                            TFORM66 = 'I       '           / format for column 66                           TNULL66 =               -32768 / blank value for column 66                      TCOMM66 = 'Number of observations contributing to G photometry'                 TUCD66  = 'meta.number'                                                         TTYPE67 = 'phot_g_mean_flux'   / label for column 67                            TFORM67 = 'D       '           / format for column 67                           TUNIT67 = '''electron''.s**-1' / units for column 67                            TCOMM67 = 'G-band mean flux'                                                    TUCD67  = 'phot.flux;em.opt'                                                    TTYPE68 = 'phot_g_mean_flux_error' / label for column 68                        TFORM68 = 'E       '           / format for column 68                           TUNIT68 = '''electron''.s**-1' / units for column 68                            TCOMM68 = 'Error on G-band mean flux'                                           TUCD68  = 'stat.error;phot.flux;em.opt'                                         TTYPE69 = 'phot_g_mean_flux_over_error' / label for column 69                   TFORM69 = 'E       '           / format for column 69                           TCOMM69 = 'G-band mean flux divided by its error'                               TUCD69  = 'stat.snr;phot.flux;em.opt'                                           TTYPE70 = 'phot_g_mean_mag'    / label for column 70                            TFORM70 = 'E       '           / format for column 70                           TUNIT70 = 'mag     '           / units for column 70                            TCOMM70 = 'G-band mean magnitude'                                               TUCD70  = 'phot.mag;em.opt'                                                     TTYPE71 = 'phot_bp_n_obs'      / label for column 71                            TFORM71 = 'I       '           / format for column 71                           TNULL71 =               -32768 / blank value for column 71                      TCOMM71 = 'Number of observations contributing to BP photometry'                TUCD71  = 'meta.number'                                                         TTYPE72 = 'phot_bp_mean_flux'  / label for column 72                            TFORM72 = 'D       '           / format for column 72                           TUNIT72 = '''electron''.s**-1' / units for column 72                            TCOMM72 = 'Integrated BP mean flux'                                             TUCD72  = 'phot.flux;em.opt.B'                                                  TTYPE73 = 'phot_bp_mean_flux_error' / label for column 73                       TFORM73 = 'E       '           / format for column 73                           TUNIT73 = '''electron''.s**-1' / units for column 73                            TCOMM73 = 'Error on the integrated BP mean flux'                                TUCD73  = 'stat.error;phot.flux;em.opt.B'                                       TTYPE74 = 'phot_bp_mean_flux_over_error' / label for column 74                  TFORM74 = 'E       '           / format for column 74                           TCOMM74 = 'Integrated BP mean flux divided by its error'                        TUCD74  = 'stat.snr;phot.flux;em.opt.B'                                         TTYPE75 = 'phot_bp_mean_mag'   / label for column 75                            TFORM75 = 'E       '           / format for column 75                           TUNIT75 = 'mag     '           / units for column 75                            TCOMM75 = 'Integrated BP mean magnitude'                                        TUCD75  = 'phot.mag;em.opt.B'                                                   TTYPE76 = 'phot_rp_n_obs'      / label for column 76                            TFORM76 = 'I       '           / format for column 76                           TNULL76 =               -32768 / blank value for column 76                      TCOMM76 = 'Number of observations contributing to RP photometry'                TUCD76  = 'meta.number'                                                         TTYPE77 = 'phot_rp_mean_flux'  / label for column 77                            TFORM77 = 'D       '           / format for column 77                           TUNIT77 = '''electron''.s**-1' / units for column 77                            TCOMM77 = 'Integrated RP mean flux'                                             TUCD77  = 'phot.flux;em.opt.R'                                                  TTYPE78 = 'phot_rp_mean_flux_error' / label for column 78                       TFORM78 = 'E       '           / format for column 78                           TUNIT78 = '''electron''.s**-1' / units for column 78                            TCOMM78 = 'Error on the integrated RP mean flux'                                TUCD78  = 'stat.error;phot.flux;em.opt.R'                                       TTYPE79 = 'phot_rp_mean_flux_over_error' / label for column 79                  TFORM79 = 'E       '           / format for column 79                           TCOMM79 = 'Integrated RP mean flux divided by its error'                        TUCD79  = 'stat.snr;phot.flux;em.opt.R'                                         TTYPE80 = 'phot_rp_mean_mag'   / label for column 80                            TFORM80 = 'E       '           / format for column 80                           TUNIT80 = 'mag     '           / units for column 80                            TCOMM80 = 'Integrated RP mean magnitude'                                        TUCD80  = 'phot.mag;em.opt.R'                                                   TTYPE81 = 'phot_bp_n_contaminated_transits' / label for column 81               TFORM81 = 'I       '           / format for column 81                           TNULL81 =               -32768 / blank value for column 81                      TCOMM81 = 'Number of BP contaminated transits'                                  TUCD81  = 'meta.number'                                                         TTYPE82 = 'phot_bp_n_blended_transits' / label for column 82                    TFORM82 = 'I       '           / format for column 82                           TNULL82 =               -32768 / blank value for column 82                      TCOMM82 = 'Number of BP blended transits'                                       TUCD82  = 'meta.number'                                                         TTYPE83 = 'phot_rp_n_contaminated_transits' / label for column 83               TFORM83 = 'I       '           / format for column 83                           TNULL83 =               -32768 / blank value for column 83                      TCOMM83 = 'Number of RP contaminated transits'                                  TUCD83  = 'meta.number'                                                         TTYPE84 = 'phot_rp_n_blended_transits' / label for column 84                    TFORM84 = 'I       '           / format for column 84                           TNULL84 =               -32768 / blank value for column 84                      TCOMM84 = 'Number of RP blended transits'                                       TUCD84  = 'meta.number'                                                         TTYPE85 = 'phot_proc_mode'     / label for column 85                            TFORM85 = 'I       '           / format for column 85                           TNULL85 =               -32768 / blank value for column 85                      TCOMM85 = 'Photometry processing mode'                                          TUCD85  = 'meta.code'                                                           TTYPE86 = 'phot_bp_rp_excess_factor' / label for column 86                      TFORM86 = 'E       '           / format for column 86                           TCOMM86 = 'BP/RP excess factor'                                                 TUCD86  = 'arith.factor;phot.flux;em.opt'                                       TTYPE87 = 'bp_rp   '           / label for column 87                            TFORM87 = 'E       '           / format for column 87                           TUNIT87 = 'mag     '           / units for column 87                            TCOMM87 = 'BP - RP colour'                                                      TUCD87  = 'phot.color;em.opt.B;em.opt.R'                                        TTYPE88 = 'bp_g    '           / label for column 88                            TFORM88 = 'E       '           / format for column 88                           TUNIT88 = 'mag     '           / units for column 88                            TCOMM88 = 'BP - G colour'                                                       TUCD88  = 'phot.color;em.opt.B;em.opt'                                          TTYPE89 = 'g_rp    '           / label for column 89                            TFORM89 = 'E       '           / format for column 89                           TUNIT89 = 'mag     '           / units for column 89                            TCOMM89 = 'G - RP colour'                                                       TUCD89  = 'phot.color;em.opt;em.opt.R'                                          TTYPE90 = 'dr2_radial_velocity' / label for column 90                           TFORM90 = 'E       '           / format for column 90                           TUNIT90 = 'km.s**-1'           / units for column 90                            TCOMM90 = 'Radial velocity from Gaia DR2'                                       TUCD90  = 'spect.dopplerVeloc.opt;em.opt.I'                                     TTYPE91 = 'dr2_radial_velocity_error' / label for column 91                     TFORM91 = 'E       '           / format for column 91                           TUNIT91 = 'km.s**-1'           / units for column 91                            TCOMM91 = 'Radial velocity error from Gaia DR2'                                 TUCD91  = 'stat.error;spect.dopplerVeloc.opt;em.opt.I'                          TTYPE92 = 'dr2_rv_nb_transits' / label for column 92                            TFORM92 = 'I       '           / format for column 92                           TNULL92 =               -32768 / blank value for column 92                      TCOMM92 = 'Number of transits used to compute radial velocity in Gaia DR2'      TUCD92  = 'meta.number'                                                         TTYPE93 = 'dr2_rv_template_teff' / label for column 93                          TFORM93 = 'E       '           / format for column 93                           TUNIT93 = 'K       '           / units for column 93                            TCOMM93 = 'Teff of the template used to compute radial velocity in Gaia DR2'    TUCD93  = 'stat.fit.param'                                                      TTYPE94 = 'dr2_rv_template_logg' / label for column 94                          TFORM94 = 'E       '           / format for column 94                           TUNIT94 = 'log(cm.s**-2)'      / units for column 94                            TCOMM94 = 'logg of the template used to compute radial velocity in Gaia DR2'    TUCD94  = 'stat.fit.param'                                                      TTYPE95 = 'dr2_rv_template_fe_h' / label for column 95                          TFORM95 = 'E       '           / format for column 95                           TUNIT95 = 'dex     '           / units for column 95                            TCOMM95 = 'Fe/H of the template used to compute radial velocity in Gaia DR2'    TUCD95  = 'stat.fit.param'                                                      TTYPE96 = 'l       '           / label for column 96                            TFORM96 = 'D       '           / format for column 96                           TUNIT96 = 'deg     '           / units for column 96                            TCOMM96 = 'Galactic longitude'                                                  TUCD96  = 'pos.galactic.lon'                                                    TTYPE97 = 'b       '           / label for column 97                            TFORM97 = 'D       '           / format for column 97                           TUNIT97 = 'deg     '           / units for column 97                            TCOMM97 = 'Galactic latitude'                                                   TUCD97  = 'pos.galactic.lat'                                                    TTYPE98 = 'ecl_lon '           / label for column 98                            TFORM98 = 'D       '           / format for column 98                           TUNIT98 = 'deg     '           / units for column 98                            TCOMM98 = 'Ecliptic longitude'                                                  TUCD98  = 'pos.ecliptic.lon'                                                    TTYPE99 = 'ecl_lat '           / label for column 99                            TFORM99 = 'D       '           / format for column 99                           TUNIT99 = 'deg     '           / units for column 99                            TCOMM99 = 'Ecliptic latitude'                                                   TUCD99  = 'pos.ecliptic.lat'                                                    DATE-HDU= '2022-02-28T15:26:36' / Date of HDU creation (UTC)                    STILVERS= '3.4     '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ´d    Gaia EDR3 253584696042312320„éğ Ò€    `s@Ÿ€     @Q&Ğ,BZ¼=“T¸@F®ñÄÓ;â=5OÀ?Òâ…¡L;=­‹X@^ÜL?ƒÑ¿Ãşp§8:}=ÁÂÆ¿ğIUŒÓïö=‡>d¯A½Æw0=rf*>Ğ`5½)„>Ãr¼<ÕÅÒ½–Z=.S=›ÀŞ 	Ş  ¿ôCÙ#á         F?¸"ÜÀ  À  À  À  À  À  À   7 >ÕË ;   <¦C•C(AŠ    ?p0À  À  À  À  À  À  À  À  Fæ@ ß®è²!?·F×D¼²AŠÏ} 3@‹‚QñE.Ï@êjBğ¶”AĞÚ 5@œİí3¦BÍ@ÑåÃCŒÔIA„¦Í        ?¡¨W?² Ğ? + ?E À  À    À  À  À  @cÎVTj4¿ù*/´:L@RtvOgô@74l‰Üğ´d    Gaia EDR3 253586383971386880„ëy }†     ?¤1@Ÿ€     @Q-yÔ¥™ÿ>e@F¶‹"Õb:=¥°[?İÔ Bı˜>$™Å@9”Y?z~¶¿Õ<áÁ€Š>v›¢¿ítİ8¯ëD>K>+Qt½¯Úe¼Só!>´SÎ>P|z>Ş4ß¾X¸Ô>T°ı¾‚½ßVa°  ­ ?6]TCèÁ         F?¬ì¬À  À  À  À  À  À  À   1 >¬X2 4   =â@å    ?ƒ
+â>¹n²?yü>?£L>?®Á(ÁnÁPH°Â‚ÂF»@fĞ›?¡š”DKcšA‘D0 0@t•-y¾Ÿ@ò”ÃB-Å;A˜[ 0@ü¦OA!XBÊş‹A‰È         ?¨–Z?é1`?bİ`?o…`À  À    À  À  À  @cÎ…kAF‚¿÷©™û‘ø"@Rz#'Ø@7+Dg}Ù>´d    Gaia EDR3 253587891498025216„ìØ      ]D"@Ÿ€     @Q${VøÎÓ>Xâƒ@F´ZóæÀı=îP?Õ^	¿‡»>qÆ7?´ÿ?©Q;¿Ø4Ï05•s>Ñ™¿ôGó´gHÜ>/O]>-O÷½F	:=ÿ¦>ß^9<g2>ßı)º“›=„	š;ìbN½	ëÛ²  ± >ØşÿCå·¢>W¯Œ>@Fe _FÀ  ?´=¼=#âl¾Å‹=2 —>ô;= ø6»®èe 3 >Ê´3 8   <å†TC,ÖV    ?Â­>Ó1¯?¿”>?+>Ga”Á/"É¿Ü2_Á(·¶B%4ÛF¿@2§Âş¨?zälDbIA–¯» 3@cç÷@ÎÓº@Ñ¢AÂxTAª´ 2@€ú%¬˜Õî@ü=ËB‰×EAHk       ?£ev?ö$?_ ?lê À  À    À  À  À  @cÌÉt‹)7¿ùrC!Iì@Rs+"Î«a@7*ìÏsí*´d    Gaia EDR3 253588200740686464„í  a
+€    C#V@Ÿ€     @Q!v`–s>Î,@F±?LqÑ<=“r?Ô¹ÿv½><É@û?‹JÍ¿¬“.I7¥Ø>AÒ1¿ñc||ë =ò­½½æ¾¸,õ¾ ”N?é>i™!?À¾G Ï>œ§,¾‰'¾©@dâ  à ?8WDÀ,>€íÓ?KŸE F?±†À  À  À  À  À  À  À   7 >‘#à <   <€‹«CV¢    ?‚çñ>±R?
+=Ä>tƒã=ò7õÀÌ—ÀesÀÓ³UB,ÊoFæ@’ø¸3»?Œ}qDƒÁ4A;­ 5@y	ùvïˆ-@êrjBZºA–§S 3@ØU9=Ò@õI®C¥IA‰Tƒ         ?£›A?Õ- ?MtÀ?\å@À  À    À  À  À  @cÌàã›3¿ù´ú5/D†@Rp]vâ@ @7&H7—1´d    Gaia EDR3 253588338174593664„í@ 
+€    áQú@Ÿ€     @Q·Ë3c±>y[@F°«Pbg=–ö?á×Õ åä> ×¼@c1ì?œ‡¿ÅÃ©`|D>B]¿óR§ bƒ=üP
+½‹… ¾ºìR¾êÇ? ğ¾>Œt?	[¨½Ô£¶>‚şy¾Xüo¾©!zÒ  Ò  ½–æèCï@{         F?°q0À  À  À  À  À  À  À   6 >‘­… <   <+!SBô#e    ?1±>ÎV?E)>‡L=õiö@2Àp¿Õ˜BMFã@‘€FØ}€ş?šDgç2Aƒ˜ 4@x-†Ã9@Úã¥Bb30A–õM 5@:.÷ÔÁ@®ÂXC>*ÇA‰§˜         ?¢ã{?ÔÛP?N6 ?[€ À  À    À  À  À  @cËö!íıü¿ú>‘Ovs@Rm³W`@7%€îò?´d    Gaia EDR3 253588475613577600„í` €    	Û@Ÿ€     @Q Bíñe5>t€z@F´/Azîx>œĞ?Ø®4ú¤E>€	 ?Àõ?„6g¿Ö:…`zV@>¯BÔ¿ï ãZxˆ–>Cƒş>}Q°½Ñˆ>12>øÛÄ=Ãàï?ÿ:<Œ€0>3ıú½¨ü–½(HyÜ  Ø ? ¹Cÿ”-    '+@ _FÀ  ?­ ¬=1*Á½V›¸=ÕÅ=ü®m<Ëát;Ğö} 6 >öi‚ ;   <êóõC!    ?‚>Òô0?€W>;†>®,ÀÒ‡ÀR$kÀèW>Â3¼Fß@}î‹¯Š_?e#ËDÃA—äÕ 5@`”øšˆD´@ àAÓm°A @ü 5@}E÷–<ç@¿õÙBœ(A’C        ? £©?úë?…Âp?jR@À  À    À  À  À  @cËĞ\V¿ù‘”t–(à@Roø¹ê{;@7,vÚ”K´d    Gaia EDR3 253588651713938176„í‰ zÃ     @¥Ò6@Ÿ€     @Q#›öÔ"G=³Á@F´îXyc)=YĞ5?Ğ3,è`-=Ój@ÆÃ?•¸¿Òy@øÖ`=â§ã¿ò"ÖFèñè=›r>%Æ(»¾4{<–Ú|>èVJ½L>Ô_Ş=]U½ğ`=…•U<L:øÃ  Ã  ¿)ÖMCŞ­·         F?³MhÀ  À  À  À  À  À  À   4 >Ä  :   ;·¿îA(09    ?z%>•û,>éPî><`>…ç‚¼¦–
+À€%e½t%BxFÔ@š9ôŞâ?¤yGD£H…A % 5@ƒ'a£éGÂ@ÚXµB³§±A’õÑ 4@—¨¦G)@ğ\ğCI•YA†a5         ?¢5§?ÉIÀ?>µ€?SŞ À  À    À  À  À  @cÌy3Ô%~¿ùÌ…¥Ä-@Rrc7ë@7,shü/´d    Gaia EDR3 253588686073679104„í‘ zÍ     #ıwù@Ÿ€     @Q"«›ºŸò=€ \@Fµ'w‰Y=ƒ'?ÉQ{M.=™.è@)<W?“Td¿ĞWßR.+Ü=£e%¿ñõ8wÎİ=aºw>w˜Z½åY=c Ë>åÅ¼‡±>Ôlz=~™½—N¡<`Å<©ÿ÷õ  ô ¿&–ëC÷¯½         F?¶IÀ  À  À  À  À  À  À   9 =äò @   <KÆC(««    ?zt>§KÉ>ôì>ká>iH³ÀÜ`ŞÁ'L Á"(B#P*Fü@¥ÿ,/¨Ï?Ê,¿DÛ®Aˆ¨= :@ş(ºìcP@ÊL#C,¾Aú¼ 7@¢Ö»¬Œ£@óyêCvjA‚V        ?¡Ô?ºC°?*Oà?J7€À  À    À  À  À  @cÌ5—O¾°¿ù-©I¾N@Rqß¤Š@7-MÊÿ#´d    Gaia EDR3 253588716131754880„í˜ £€    UÏ@Ÿ€     @Q#­rÂ>"W@FµŠç2Ê=¶4†?Ï#‹»bÙ>A{Æ?§?¢V0¿ÛâÂ†[š>vxœ¿ó¤5ã™$>6¦>å“¾C(ö=ş’>òçQ>jn?`ë½°˜¤>¨Û¾O ¦¾# ü¼  º =|û*Cä³î         F?®õÀ  À  À  À  À  À  À   3 >®j_ 9   =ßBºd>   ?€+y>ÃÑ¢?WÕ>LA@>4
+Á33AÀsŒÁ7&%B1
+_FÊ@Ša§›ø=?ŠpÄDC"ŸA’øO 1@qZ÷bg@ºÀöB>R÷A™ÖX 2@‰¦n{ï¶¼@ÊbCÈ8A‹²É          ?¦?â8ğ?[Á ?h°ÀÀ  À    À  À  À  @cÌ`“ÀN‚¿ùF¾{î®@Rrª}ö»@7- uÕÊÑ´d    Gaia EDR3 253588819210986624„í° ä€    j$«@@Ÿ€     @Q%ô¨Û>.@F·søZa==ªén?¬ÂhaÆ¼²>-É–>©u/?—Æh¿Ø[ãø¤Tî>SÔ¿ñ÷Ë±€z=ëĞ†>#\ˆ¾9>=ß‡~>ŞG,>/>ü"½I‰>‹Aw¾×½Âğ¸  ¶ ¾Á-FCÛû8    '0 F?­·ìÀ  À  À  À  À  À  À   2 >•“İ :   <¯]@kù   ?|‡S>ºT?-u>'ôÕ>GºÁ5z/À„¶Á+LØB(§˜F¡@ª^­Œ„Ó?^1DY‚”A‘©¶ 2@s›“Û~Ó@£ [Bv[}A˜Ç 2@LÃAş@W@î0ıCBÓAŠ@Y        ?§eO?èj°?c©À?m+ À  À    À  À  À  @cÌ^x¨æğ¿øª-¾œ ´@RsêªOeû@70ÂM)Ç&´d    Gaia EDR3 253588857872349696„í¹ zz     1uÿv@Ÿ€     @Q%ÄÔ‘¹¢=¡Š@F¸V¬ã)‘=M?Ó¦«+§=Ä ¼@L§p?£•I¿Ö$ûéŒ“C=Óê¿ó¯'Ç×OD=•/h>vX—½æË=‘Ë>À=ğ¼™şä>¸¿ø<ƒÅù½ŸÓ=…J›=¼ß=á  á  >}ÒCû$Ü         F?­ĞËÀ  À  À  À  À  À  À   7 >Ô< =   <*ÑL?°•—    ?€|ê>…&i>é%(>>—£>t?bÀ>†éÁ,øÀ˜†¼BNªFñ@œ"q'}—µ?²@D¡ AŒcú 9@\WÑ¹[!@áPB«A“Ğa 7@›ñ¬ÓÓc@ñ¾Cm^A„ï         ?¦ 
+?îP?mŒà?nÀÀ  À    À  À  À  @cÌ\0°|ó¿ø“ÌB¾"@Rt{/÷bŠ@728sàz´d    Gaia EDR3 253588926591834240„íÉ z˜€    T¬]L@Ÿ€     @Q#ØäGyÅ=.Û’@F·Åfwñ’<ÖTs?Óu²ˆø0=['·@µÓŸ?›ïÃ¿Ê§.û¤ú=dî¿ó4‹Úqø=ôŸ>—<³y£=àº#>Û›Ë=tïe>É5ì=óU½uõD=}Ğzº?Ñ—ö  ö  @FMDt€>‘Ä?Ì} F?¶vÀ  À  À  À  À  À  À   ; = Sí @   <p@VAja    ?Œ±×>ÔS	>îG|>Cr)>?°ÀíÏ ÀşAÁ$TB6aFø@¶,õ§ È@Æ´EbYA‚q= 9@¡	ßáß@ñ7èC•nA‡­ 7@³^ASË,˜AÉîCûcAx'6        ?¢ğë?¹˜?'{à?K´@À  À    À  À  À  @cÌö(‘v¿øÍ\Š}@Rrûà=é*@71óÒæÜ´d    Gaia EDR3 253588960952103936„íÑ ‚´     eÎë@Ÿ€     @Q"rŒÚ°8<wPÑ@F¸AıF‹<”á?Ô)Y"‚Û<•K“AŠJŠ?”}Ø¿ĞâV:Æv<œ™ ¿ò;u@zG<_şó>­¾ë==«=À"ğ>ğ¤É=ÓÜŸ>×Z˜>®%»•—$>që=Âk÷ş  ü ?’hYDÖ<Å!G>Õˆ _FÀ  ?½£;L^½¾Å=§èö>±>%¼¼ ; <İg÷ B B  <¶C+²    ?„ñ>ÂÇ”>ıUö>o{³>o-OÁ"›MÁkËÁS–1Â2´DFù@éïî|¯1A=qÚEŒ2 A]üÜ =@×K•±	A£7WD’&°AfPf :@ä¶×üÔA˜-5EbñARÜÅ        ?Ÿ´„?›?8 ?2pÀ  À    À  À  À  @cË•ıåÎ¿øñ¢l@Rqøhİtv@73‡8†™ô´d    Gaia EDR3 253588995311310080„íÙ z•     5B)¶@Ÿ€     @Q"aš³†=tB@F¹™´A$o=†?Ñ7ˆ<)=•‡¸@kÈ+?–	¯¿È#Ã¶ğ= u¿òƒø!7Ä=\Œ>–?ì¼íà¶=ø‰’>êçÌ= 9>Ù9õ>^Ã½È=¥K=œñ©	   ¿08ÇD Æ-    &ÿ@× F?³gTÀ  À  À  À  À  À  À   < =â·* B   <!€	@¡Eâ    ?z]D>ÌÇ°>õMm>=¢–>o·LÀFşŸÁ@|AÀĞ B'T6F@¦1_â.?Ë‚DßUÚAˆn3 <@q>xüÑAû£B÷¢5ACõ :@¤›Æ™ƒ®ZA.éC“b¢AÜ        ?¦GW?ËQ?:¸@?[êàÀ  À    À  À  À  @cËRtm»¿øÖ+ùL$@Rré0~@767‘;Š=´d    Gaia EDR3 253588995311508992„íÙ }     C8-@Ÿ€     @Q#‚€Â=—È„@F¹¢Üş£=9‹>?Ú‹ˆ'-Ó^=½K@™"?”ßz¿¸ÃµY\ít=É÷©¿ò‹m˜ÿÓ<=†Ë,>8½ã©ı»Ùx±>èM¢=‰\ >ÓòÁ=„’½?2¥½§»sçâ  á @åxDÉÙ>fÈ?Æz‹ F?µvÒÀ  À  À  À  À  À  À   7 >  =   ;ÈÅ°B$    ?Š%'>§¢>é.÷>PX>|ü&@Ÿ€ÀÑó£?Ä™şB{µFë@¡¸Xûô?ÀÛD¼,úAŠbª 8@‹kâ@k´f@ôNBåßqA×ò 4@ŸZÿçèP@ĞƒÏC™ûõAƒîí         ?¢Ä)?¾P?.© ?Nw À  À    À  À  À  @cË•ª(È¡¿ø°/ÂË÷W@Rrã~¢®ü@75Ç?TX´d    Gaia EDR3 253588995311509120„íÙ }€    :áw_@Ÿ€     @Q#e+"â—=ls@F¹²9½¬ğ=™q?Ö|sJ³f=š–t@”ó#?°÷¿ÑÌPöÎ‡<=à=¿ñ$µFŸ)=WbM>_aÑ=<Şf< (¨>Õ8§¼‰&>À™=qŒå¾=d|¼NÜ=.ÉÜ  Û ¾¿‡CïP¼         F?¶±’À  À  À  À  À  À  À   7 =ß:‡ @   <‰f~BI“`  ?|³¼>Ğím>òÃ>"vÕ>yÃoÀªvUÁ0ìÙÁa3B"!¿Fé@¨F¦¬`L¹?àpÜDİ„A‡¦µ 9@“]ûÏ‘ÍDAÏ1CõÜAŒ×ë :@¥Í™r98AáC¤ÄA[š        ?¢AC?·Å?&&À?Ic`À  À    À  À  À  @cË‹ÌUÙË¿ø²Œ>fz@RrÏc7R@75ôpŞ ´d    Gaia EDR3 253589029671044992„íá z‡€    ûÀ;@Ÿ€     @Q$i3·Sn= „ï@F¸È±<Ãe˜?Ë;5õªp=IMp@Š…¨?ŒÃ¿ÃÇ6–Pô=R)b¿ñUpsf¸=ÀŒ>CĞ½Á˜¼Ç¤>ï‰ğ=ºUÖ>Ô!é=^>U9Ÿ.*:¯ ½QRFõ  ó ?Ô¾lDŒ=¨¢,?:D7 F?¸¯À  À  À  À  À  À  À   : =’ñT @   ;ï£(C7    ?†½^>¹œ>ìÅÓ>dk>|ˆğÀ‡¢¯ÁH5ÁiÒBA‡F@¹Ëû*»@4Z\EwÉAR 8@¥¡xİ.â@ı™C®¯nA…ÜÚ 5@µûE[,7É@şÃ®D0´‚AuôU          ?¢»Ç?®*ø?Q ?DğÀ  À    À  À  À  @cËô“øm‚¿ø¤È¢åÛ@Rs~ö!¸É@73³ÑÜP´d    Gaia EDR3 253589029671046272„íá zŒ€    Mş°®@Ÿ€     @Q$ UõÁÄ=ˆş@F¸ÂÙf°<Áúr?ÔCÏ7nIÙ=Hm@ÎßM?”*N¿ÑDÀë­ÌÜ=Jëò¿ò®-­n²=ÕX>€/•<p0H=cS]>áX–=¦Qİ>Å Ö=ãåk½¹h
+=ˆZô¼6Ã¨   >ÂÂvDn         F?º¤À  À  À  À  À  À  À   ; =æ; B   <B±¿?Hnë    ?r>>ËŒ¥>í¿y>IB3>È…ÀŒ‹"Á%Áõ4B FF@¸@„®8„u@S¬EÚlA£¡ 9@¤Û5#v|ßAšC¢H­A†-í 9@´
+u!eÔøAüD‡Awb        ? Ğ?¦cÀ?I€?;~ À  À    À  À  À  @cËäxŠ† ¿ø®¾)P±¶@RsGxJÂı@73Ç×?â´d    Gaia EDR3 253589098390509952„íñ zY€    XKÇ@Ÿ€     @Q$Ok˜%ı=/,‘@F¼€Åy<ŞùÑ?ÒÑ®ÓÙ¥=YF˜@±\«?‡ôG¿Òòo4Ï=z/A¿ğR '=$­$>‡ó„½N³ˆ=Ÿû>Íä'¼Ä`œ>Î9¹<²Ví¾Ô°=…è»<ûíßó 	ï ¿ÍQ+Cæ'         F?¹UUÀ  À  À  À  À  À  À   : =¯Fƒ @   <®B…@¤?$    ?rÓÀ  À  À  À  À  À  À  À  F@³nN'îÈ@5LEîoAƒu 5@ ~F}ÔA! ÚCQ LAˆ7¨ 5@°DŒ¥iwA9CeC³Õ-A{/        ?¡}¿?ªx?æ`??À  À    À  À  À  @cË?O†ö]¿øW{q¹x<@Rs½sºæ—@7;t>¡Ä´d    Gaia EDR3 253589132750457216„íù }‰€    òVL@Ÿ€     @Q%s§gPô<¼\!@F½d” ¢<j4?Ğ†K¹©MÉ<ór|A_?Á/¿Ö›Œ‰¬‹=¹Û¿ğË4A—>><¬ö >sˆ»ˆ"®=ˆm÷>Ş===+ğ>Í‘=½BÇ¾Nk=úÃ½Çóÿ  ü >şs4Dûñ         F?»öVÀ  À  À  À  À  À  À   ; =<ï? A   <¹9…A+¼U    ?ìò>»¤…>í¿>AÛ6>‚[¿g8Á"ÀŒé¢BûçF	@Ğ$§Ù^i•@qHƒE‰ÆArD, >@¼È˜‰5£A%ÉD1ÉLAz¸¦ =@Ê /P¥ñA-E¥Dš!gAfñ^        ? t?:@?G ?5,àÀ  À    À  À  À  @cËZÔ`š¿ø÷e ì@Rt­>÷¼@7<W¼ol¸´d    Gaia EDR3 253589300247314176„î  ¿     6^@Ÿ€     @Q*ĞyÆ<·>^ÊÄ@F¶·%4¥Y=õÆÊ?³0Ò(Û‰>Áñ>—r6?qü	¿ÄhüóS´©>¬f>¿íĞˆÈ‘ƒ´>=m>w½™¾>ëÅ>FeC>«Qğ<éUë>Ğâê¾	Á¢>V”ñ¼ş·[;ìLô¸  µ >¿Cã¦‰    '‹YH F?¬qÆÀ  À  À  À  À  À  À   3 >ñ´‰ 6   <Ñ>³C#eR    ?€”½> œe?
+d>_·Ù>pÁqrÀÙÁfjuÂì{Fº@7á’
+¦ì?‡”~DA–­ /@d:(û„0Q@Á§~AÕéáA‡  .@€ç•e‘@ÑÅÿB¥	ÔAQï         ?£B ?óS?{A ?ke À  À    À  À  À  @cÍÛ^5%¿÷ığ ¶q(@Rx%=)=@7,ÈôÓæ´d    Gaia EDR3 253589373268409216„î1 z;€    2Õ'@Ÿ€     @Q*şT­À=½Œà@F¸O‘1œ={¨Û?Øj}¹=â]ü@\á?šØ^¿ÙìúsäÜ=>t¿ò<û8yë=¼­j>……ã¼d~–=¾_>¹×ù<yNá>ºôX<"70½·Î>)n=Ç+$ú  ú  ¿?ôÃCùZ¹    'eÆ F?² =À  À  À  À  À  À  À   : >>2Û >   <¤WáC0ËW    ?yÊz>‚‰)>ó¦E>¨C>d†¾Ûù^ÁP„eÀšlÜB/Ï&Fó@”ÖK1§3?¦ıD†}|Aÿ¤ :@~{İo@à­°BˆøA•{ 8@“`Êÿs@Ü4C4L‚Aˆ        ?¥0«?ÏGp?B:à?\T À  À    À  À  À  @cÍ›8p&¿÷ÕznÀÒ@RxjÅ;9Ñ@7/Ú€F¤´d    Gaia EDR3 253589437686260992„î@ ¥     &¦·h@Ÿ€     @Q(/GŞŸû>&Æ@Fµ»¦›ËL=šAw?Í“ƒy·Ù>~í?ÅO?‘0ä¿İd øİyQ>9ÜÏ¿ğ˜?8=è@8=‡Ù¾O¡à½£ïø>ç7Û>(Ì°>é]½Ã±ò>ckİ½®5„½â¦+Ì  Ë ? V7Cô¨         F?°°rÀ  À  À  À  À  À  À   5 >ƒ2 9   ;Ú†CF>    ?‚
+y>˜öÄ>úÔH>7Œ>OÉ?ÀfÇ˜À —ZÁ\ÿB) °FÒ@Z­-YÛu?’5ªDeùA‘N 3@w[ Ÿ"A#(èBh8A—cN 3@À‚ ÜùAkşBÔ*sAŠi        ?¥]–?Ô>P?I  ?_\ À  À    À  À  À  @cÍiïp0¿øj.ZcE0@Rv'5E@7, Q‘´d    Gaia EDR3 253589506405751680„îP Û€    ‚@Ÿ€     @Q'Ç„Kÿ?>,|¾@F·UÁK=ÊßV?ÚUõÊ .>Nth@œ?†:ó¿Øåık*ä>…eä¿ï)µ];¡ã>D™=ß•½å:ë=³T>Í‘<>1Ñæ>èb½š¡5>”ŠÄ½Ît½ÖšŞ°  ® >ó›šCäÂ         F?°ş›À  À  À  À  À  À  À   3 >»Ü/ 7  <ë<6C-QÉ   ?şa>©ö¸?Z¶>	‹S>BÛ#ÀğKz¿zåÀÍ'CB~aF¿@†f#µ=à?…^iD+ıIA”d 0@n£Zµ|§ÃAW•Aò¾AšëÚ 0@…uá‘‚ˆ@Í÷ÑBÕcBA?T        ?¦eŸ?ÚÈ`?Pù ?d— À  À    À  À  À  @cÍê”‰ş¿øTğˆÅúm@Rué*¥Œ@7/W ,²d´d    Gaia EDR3 253589545067101696„îY z>     BôŞ-@Ÿ€     @Q(ÜÊõo1>7Zw@FºGè|¡ò=ÙwÑ?İíÌ8>PF@Nÿ?/¿ÂWTŸÄ@Ö>—gq¿óÖ	ı”> XY>M¡}¼Ó‘>+|ï>È¹m=ğœ£>ö#—½qÏQ>Sş<½kH½®ŠúÑ  Î ?"ÑÛCøYß>’ M>ìY F?­‚ƒÀ  À  À  À  À  À  À   6 >Ôvo :   <İİµ=×}    ?‚›´>ª¤?ı>>0ùÙÀüMÀZGbÀÎçôB-öFà@„Y9èC[p?¶wD £ŠA•9« 6@i…6¾@Æ'æB´ØAœ§6 4@„—£r8ë@Ââ2BØfÍA›&        ?©W?ğÁ ?m±`?sĞ À  À    À  À  À  @cÌ¼Ò4¨¿÷ñEzê+@RvúËN”£@74¯¼}EÏ´d    Gaia EDR3 253590537197945728„ï@ ƒ€    IN5@Ÿ€     @Q'-Ğà\>ZÄÀ@F½/aØ–¶=ôñ!?ÓO8o®>i]]?©u…?‘0¿¿Úe&<Î>° Œ¿ğèĞŸ-w>4­„=j€Ó½ÊÍ¿½?ë;>+˜?ÑT¾%f>†Yo½ù½m¾…´À  À  ¿™î CÔÔ‹         F?«ïòÀ  À  À  À  À  À  À   4 >ú¼] 8   =€5§@+/    ?u‰ˆ>«¢ ?ò>İö>ÚÓÁ¢>¿é.]ÀªUQB/a±FÉ@‚ÊÙ£2Ö>?ƒºDèA•ê“ 5@g1õğ¶Ã@Â| AôA(AV® 2@‚€Hó¦@ûÕ¨B–tşA‰E        ?¥ƒa?ìÖ?mƒ`?l)ÀÀ  À    À  À  À  @cËÍ¡Is¿÷éú°uÃ@RuõÔ³»‹@7;*Ê—7Ô´d    Gaia EDR3 253590610218990208„ïQ z:€    W¥çÂ@Ÿ€     @Q&<‰ÕB=Ÿi@F½tZ…=K`ê?Ñ^š\¨V=ÆŒ>@/¦p?Š·q¿È†¡¿ş˜Á=Úà¿ñÿ•v0=‘§Ö>iI¯<Ğ$=¾Û¡>Ô– »¶c>ÏrÜ=w¾0•Š>$Íë¼´ƒ‘â  à ?œû~DC>${E?ú· F?µ³NÀ  À  À  À  À  À  À   8 > >   =&>C2BŞ    ?…	+>¤>ätd><øÃ>ë§¿°N7ÀğÖ¾í=UBƒÆFñ@aÔO?¸_AD¨¹åA‹¹J 6@‡˜_lÑ@òéüBÆî/A‘& 7@šåI†ïœ°A ™ØC+|óA…D        ?£±?¾ €?-š@?N¦ÀÀ  À    À  À  À  @cË€¼á÷¿øŞÿ;ø@Ru/ÛMóa@7<*;×e´d    Gaia EDR3 253590777716707072„ïx      ´2Z@Ÿ€     @Q)–è¤©>;ˆ@FÃã=ÔD?àˆÕê4>Pwé@"o?“Ê¬¿ß\vÂè³ >Û~¿ğºL˜ıQÁ>ñ@>f0¦<ˆ•>,:5>ß%·=¨·Û?×½WÌ©>,æa¼Jæ%½¬˜äë  é ¾¸Cù»P         F?®´gÀ  À  À  À  À  À  À   8 >Ë~÷ >   =9¡ïC.;-    ?~’>±ìw?ÿ¬=÷NŒ>$µÁBßÛÀ“ş~Á$ŒÂ,°Fğ@„±’)d¼?}ôßD%O[A•)O :@lƒdŒ™ZA^âAØó¬A›° 9@ƒˆkº(—[@åÂØB®ÈA™         ?¥¿©?Ùş`?Pæ ?cÀÀ  À    À  À  À  @cËMw¬c(¿÷,DÀq@RxF¿¢š@7E›å©F´d    Gaia EDR3 253590915160121984„ï˜ b¢€    6H@Ÿ€     @Q-’œ;+>9óÕ@FÃ_|Uˆ=Ğ@v?İÑ±â.U>NÑå@Ïı?{^ó¿×¶İ€Äœ¼>’‡á¿í(½áç>Àâ>><¬Ô±>:N>Ï:ñ=±”`>ğÿ¨½å¾ú>F?c¼)½È¾6·  ¶ ¿wCÙ&æ         F?®º/À  À  À  À  À  À  À   2 >Í[ 6   <Ô‹Ã@,'    ?zút>¯¨­?k>&–9=î]¢ÁB'ÓÀhÕâÁ!ü£Â#N_F¾@…j¥ïS“w?ŒãaD¨ØA”Çë 2@l³´±"t@¨zUB.oCA›}1 /@…­İê/³@íB»Q•A(É         ?¬sŠ?åF€?V¨À?sä@À  À    À  À  À  @cÌ<çW‚‚¿ö—–İœ•@R{GÇ(sq@7CòU_?k´d    Gaia EDR3 253600574535381376„øa 1€    d&@Ÿ€     @QÖdn=†š @FºÛpfdÁ=ğÇ?ÉÂåóf¶=˜D@-<|?£¢e¿Ğ„^šíàÏ=³4Ë¿ô|Øm4=`4>Çˆi¾ ^!>¡ãI?“R½„Ôœ?¯>‘Ræ¾Dà¼½¹‰>C¸   ½:"Dî         _FÀ  ?µ`§<O¦G½ÉçÎ=L¼=Ì‚P=k’A¼ÚäÕ < >€ A   <©M`C1{|    ?yY>Öº­?šp>;ŒI>4ÀHÛ ÁG³À|,ÙB#'F@§îl@!D¢2¦A‡ä; =@“*CMõ³»AJI?BÂYAŒï= =@¨ "â©oîAÁ/šBÿÂ^A€0~   3   3  ?¶¸?Ëëğ?!`@?vw À  À    À  À  À  @cÊ?ŠÊFJ¿ù/ÒFº#@RoyÁs@7:Fq¼Tî´d    Gaia EDR3 253600677622352640„øy z‹     5¹½@Ÿ€     @Q­…$â¶>ò@F½rèÓ‰ =œİØ?ØâL­ª÷â>'{Î@$5?ÕÒ¿Ó'ÜİÆl">S.Ê¿ñTsÏÉ
+k=æş–>ct•½h¢»>)±u>÷XÒ>0—y?= §>uÎx¾®£½á_xö  ô ¿ACõØæ         F?®­+À  À  À  À  À  À  À   9 >•³ >   <Ô²@nô    ?y³>>íîÊ?zí>%Ëº=öªoÀiwÀ…2ÀdÒB+‡ƒF@·Ò¸?’L3DOıoA‘ï´ @uÆŠ~×;ÌA4ª:AöØrA—İ× @`t(jø?A ß5BùPßA‰ò°          ?¶|?Ş²p?=Ä`? €À  À    À  À  À  @cÉøİ®q$¿øÛĞaÕz‹@RpTÇòµ¥@7?›š±´d    Gaia EDR3 253600711982096000„ø z€    fÂÂ@Ÿ€     @Q!Ğœg¬“= m@F¹&ì"<E„?Úú<$öE=%‚ÊA&éÕ?É¿¸ù…&p='ı¶¿ïÔùœ< ±<å,>‘tÔ=qÜ=‰	N>ÎtÎ>5D>»‡=5l½m I=TÜ=+Ró  ò À
+ZÔCŞ¿x         F?ºİÒÀ  À  À  À  À  À  À   9 =jÔK ?   <À¢C3šH    ?ni	>ÑFC?;>@i¢>\ä­Á/Á[KÀÁPNB3Ê´F@ÂdÔËUÕ@4C´EM.ÆA|[µ 8@¯€e <A¤VCÍó#A‚˜Å 2@½¥¾ª¬}AM*DO‚‚ApÁÛ        ? â?£}x?]P?9 À  À    À  À  À  @cË2kÁ =¿øéİÑ~;M@Rqšõ´W$@76^Ü.Wj´d    Gaia EDR3 253600776399973376„ø l     XPø¬@Ÿ€     @Q!BLì>38@F»ıÅ³c=Áz€?ÛT;a\>H„f@P?•8~¿Şur‹|ª>ƒ0¿ñ	sß‚X>M>ˆä½Çùà>Q^>ùC0>·?+N=5—Õ>k¥É¾¸Ò½È´â  à >`ƒÀCû	½         F?®ÂôÀ  À  À  À  À  À  À   7 >¹6 <   <´A@LíJ    ?€ÒS>éN?Xz>.©=é’JÀÇXÀ¹6ÀĞÙÂ,4Fï@†¯4¿)Ö¹?}ıÅD6éA”H	 4@m”â„ş@ÁZlB¥üA›: 5@…¡‘_@±¶/BùH‡A-¸        ?£È9?àÆ@?^B`?cJ À  À    À  À  À  @cÊ•&rş¿øËí°<å@RqJj-ÙT@7;¼êá´d    Gaia EDR3 253600815061302528„ø™ z}     b°¬@Ÿ€     @Q!É­¯š=† @F¼DÏËZ='÷§?×¦h{]=¡Ğá@•¦ù?‘…=¿Ò¼E‰zÍ8=°#Ç¿ñ“¡?,=w-8>‚2g½t3=“º5>ÚºÇ<ßgĞ>Ê¹=‚_½wŸ<«šd=¾!÷Î  Ì ¾n¶KCé¶ç         F?µÀ  À  À  À  À  À  À   5 =÷È} :   <C0º    ?}ÖS>°~>ğÁy>Eá>jT´À5@„ÁU•ÍÀÒàÓB&ãEFÛ@¤ÏÚ{ğğ?ß¸ĞD·¾A‰Pj 5@]çˆ{:uAÖ6Bî6A­
+ 4@¡É¿°˜„}AŸãCŒ…lA‚Ö        ?£§0?½nĞ?+” ?OI À  À    À  À  À  @cÊ°Ù› ¿ø¯ÏçŠü@RqÑµÃË@7;¿ÎO7w´d    Gaia EDR3 253600849421034624„ø¡ zd€    =¦@Ÿ€     @Q#·’nÑ€=±½é@F¼ÍõaA=^e‰?Ö¤‹ı2¤'=×}@W1Ñ?€»¡¿×d%Pù\=ş(°¿íûR´»Ì=Ÿ»R>Pî½f›0=³èÒ>ÑŒ <¥‚>Õµ‹<ŞH½j-ˆ:œKL¼;JZÏ  Î ?¢/4D™N=ë™S>ˆv© F?³aiÀ  À  À  À  À  À  À   5 >1›® ;   <±?@çAU   ?…N§>«‡>îÑ$>: x>m¸ƒ>Ü€ÀÒMj¿Œ1[B³‘FŞ@™X5Õdâ~?¦igD›ô¢AL2 1@‚ŸÒ-Iå@ìáòB¡ÕA“4( 1@–ñ æşôp@ö'cC>ßcA†¥¬          ?¢ä¥?ÈçÀ?<şÀ?TĞÀÀ  À    À  À  À  @cË.Y5L_¿øsŞ²ñx@RsB¶ĞÅ@7:†¿*K´d    Gaia EDR3 253600849421035136„ø¡ zf€    2hÚ@Ÿ€     @Q#qRÌó=d@F¼ÔÉ™³=0©?Û¾•E~gÓ=ŒYè@ÊlT?ƒ?½¿ÁCº¾=˜ â¿ğDVug§à=IcŠ>Šù
+=(µ=‡ >ïAO=è\Ç>ßşí=ß°”;Ómm<‹,9xšİ  Û ¿ñ|Cës­         F?·˜ßÀ  À  À  À  À  À  À   7 =Õ7 =   <¶K%@·I    ?zå>ÏïË>ğ4<>­ >uÀş¿Ê(Á/…à>r :BzèFì@«ı8¸0?ìŒ|DéöÎA†¸N 7@•Öºó[A¼ğC)»¦A‹Í 8@§1ÄM8DAˆC¦£-A€ˆ        ?¡”?´Q€?"™ ?F	`À  À    À  À  À  @cËGˆTK¿ø|ÀôJËA@RsRóĞ@7:°¶°Íy´d    Gaia EDR3 253600952500240640„ø¹ zA     5†/"@Ÿ€     @Q$M "G=´W@F¾©–ÿª<Æş$?Ô˜‰¥
+È™=@€@Û®¯?’MĞ¿ÓÒğm ³=V»é¿ñš‰rÎËœ="i>¥şÛ½->P4>éQ8¼ä2‘>áÚ>$>¾MùÚ=¤›<îS§è  æ ?æ…DV$    'r F?»ìÛÀ  À  À  À  À  À  À   8 =—ÃU =   <³,?ğ”ı    ?‚{>·›¯>îÒŒ>1T[>·ÊÀ0û%ÁSúÓÀ˜›B  ±Fñ@¹­S©ÿÓ]@È+E&¤³A$« :@¦ûb2é~A/–C†6A…V ;@´¦aCÒ4A#DœYAw
+=   :   ;  ? 8æ?ø?.`?3ñÀ  À    À  À  À  @cÊÙîE¿ø(ö{uºE@RsëN¸ç@7?\0Gšö´d    Gaia EDR3 253601119997382400„øà Ï     d,½z@Ÿ€     @Q#P“9T­>RğŒ@F¿–eiì¯=é¬-?Õ¨zWCR>aTM?ÄÙO?Áõ¿İ²0›İŒâ>™Ÿá¿ğ€gûÔ>#M=>¤ÉÀ½ƒôG>º1¨>Ï(È=+Bß>õ=¦	==n¦”½n(ì=†Z¥§  ¥ ¿xÖ¢CÊw•         F?®a4À  À  À  À  À  À  À   1 >ÛZ 6   <æ-É@š|…    ?w8>Û&Î?HÎ>&Ğº>9Ş:À{»#À—A®À$€áB*sÅF·@‚V6w¶2?|R/DÕAA–!& /@gÚ\TŒÁWAA¦#›A 1@‚À“š-AnBŠÊÆA»Û          ?§Şi?åÊ@?^ë ?l©`À  À    À  À  À  @cÊq…wY¿ø5uEÊF@RsAqkË@7AŸæ€)z´d    Gaia EDR3 253601119997386752„øà à     f'£*@Ÿ€     @Q#yrÂ>PœÅ@FÀ,á7
+=âØ?ÔiÌKt‰?>jNİ?²lÄ?›¯
+¿ÑªxDCËš>£˜“¿òóã´™:>-’ı>OyÅ=n<ï>`¹¸>Æ‚ö=â ¼>ğ+";R.Å>E<ÕK¾Rtb™  ’ ?À“©Cï>>ù©+?¦ûƒ _FÀ  ?¦µ=¥&¾Aƒ§=v2=JD=02¬½Í›x / >æÑ
+ 4   =C:úC1Ò^    ?†Ë=>Øœ?
+æ>gÅ>œÀ‘Ò¾¿ØÈ@J’ŸBœ]F§@„ÇÍ¹É’s?ˆå€Dp°A•
+ö /@fXŞ,	AÆA—AÃ ,@‡eBÕã,AµßB¨œAŒœ         ?°EO@	;`?‹ˆ°?†îÀ  À    À  À  À  @cÊ_ŸîÙ¿ø#ô]¦®@RslâK'g@7Bµ}ËpQ´d    Gaia EDR3 253602155091084672„ùÑ zE€    b"Ù¼@Ÿ€     @Q–çïs=d<@FÃ÷,©ûü=<Ã†?Óó©¡×ôæ=Æ$¢@N8?~À¿Í‹¸•½’B=Öñ¿îù«¦Š=‹Šø=ëOß> ñ½*€J>×¿=tQ/>¹Ö2=;ÊĞ½ıÇ^>,ù¾
+aÿ*  ( ?8šˆDV         F?®ÂÀ  À  À  À  À  À  À   ? >xã B   <•ÓåC/4    ?‚¸á>Ë±>ñÉ>%Si>sD˜@‰3ÅÀH§±@¹ayBJF4@š…#™_t?¢Ü#D¦¿zAŒçb =@€ïP‚VN@Ï¬ùB¢Ê/A”@n :@šAÔgSƒ@Öü‘Cz!QA…y€         ?¦‘n?ìnà?k!€?m¼@À  À    À  À  À  @cÈ„úqM¿ør@Wë«@RpóRu@7L^Ölw`´d    Gaia EDR3 253602498688676352„ú! }r     !ı@Ÿ€     @Q(·é¹=YEÜ@FÂ*ìu“¯<ıÄØ?Ö¤EŠù²=ˆs,@©êœ?™\¿ÕÁzõîĞæ=™$Ÿ¿òY‰5‹=>¯ø>vB±=ÌîZ=iÃ‡>ä9¶¼¢âÌ>ÕĞ™=3ë¾cÎ­=õÕ¼tc
+ 	 >ê¿ÍD}Í=µÇØ>æ¢ F?¼VuÀ  À  À  À  À  À  À   > =ÖØM C   =+Y@—%    ?¹pÀ  À  À  À  À  À  À  À  F(@­U«5Æaî?èÎE>A†Ó >@šp]Ô.kÏAúeC@
+LAŠ#Î >@§œQCùs‰AC²ö¶A€`w   '   (  ? ´¶?œ5p??`?4+€À  À    À  À  À  @cË	
+õ¿÷`˜Ë°NN@RwY¸D/@7DœâC¾¥´d    Gaia EDR3 253602666185640576„úH J€    @80¯@Ÿ€     @Q&˜@?¤]=ï£ƒ@FÄİ+×-=Š ş?ÔÖ!ªŒ>
+Qc@J”?¡ ¿ÀœŸŒfà<>+¯A¿ôâ9ò&=Í¤7>f/´=P¼>x>ßO†;œØë>ãKí=E©·½m€=¤§<½]¬ï  ê ?y	D!=Ä*—=ë¯ F?°ı(À  À  À  À  À  À  À   9 >pM¾ ?   =e?†æ    ?‚<å>»p?lM=ú‰Ì>CáÀÉW ÀÉcëÀ™†B'
+àFı@‘İ&%ğ]÷?•]‡DtğAUù :@xcãCõ7@¹ÄB†ìæA–áÑ 9@‘æ9˜ª@¿ª+C6R A‰7ğ        ?¥ó?Ú?Q{ ?cÁ À  À    À  À  À  @cÊ@]*Jè¿÷Vá©ID@Rv.!Ûµ@7J—=“å´d    Gaia EDR3 253603460761121536„û yó     T€œÂ@Ÿ€     @Q$t†şe=ÈÓ\@FÆ!‚@—K=q¢?Ü^‡'±ùœ=ë-@wº?†ÊQ¿À¬=H_]_>
+Kü¿ğ¸*CÄ”=®êø>„nN=«£–>1„a>ÙŒS=%¾§>ÒÌ>æª¾5ë>+¼üèÊ  É ?=¦¨C÷Ğà         F?²ñµÀ  À  À  À  À  À  À   5 >BNº :   <Ù±A=Æ    ?ƒU>ÃTJ>ø6î>À>^^%¿ºMÀË—à@¿×=BI1FÜ@–¦ÈIø?ùgáD8¿{AU 5@€!‚_¹U6AOBwÏıA”sÁ 5@”xñ'ù·ÑANNC" A‡¢Ü        ?¢[Ğ?ÍP?CÖ ?VF À  À    À  À  À  @cÉ‚£mÜš¿÷‚R²ÚA@Rt­Tu÷@7N
+‘‡Gè´d    Gaia EDR3 253604766431208192„ü1 zc     –ö@Ÿ€     @QaŸ"µ=bİ¡@FÄ×ÅŞ°-=
+uÙ?ÛCÛ?Q¦4=“áô@¼Ëd?ŒF‹¿ÛmErŸ´j= Ôz¿ğ#b—Ä®“=MÄ±=ÑĞ9=}rÛ½:År>Í=ÕWk>·ïh<±Úq½µÈÆ=â[k¾6¬U  R ½ŞYDşà         F?°<À  À  À  À  À  À  À   E =â‘ H   <ç®_C-{£    ?Â>Àc6>ïvõ>(›>u0@>À}¦æ¾ÙB!ÁF]@¥
+íeÉë=?À<Dà-ÈAˆä‰ A@ŒµÏ™“A
+"|BÔÔ‹AqÒ ?@¤~~‚ĞAH0C‡
+A›<        ?¨RÂ?İi`?Q© ?i) À  À    À  À  À  @cÇ—…U^L¿øÈØ˜¬@Rm¼""x‰@7Oˆ[>šH                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
