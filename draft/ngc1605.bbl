@@ -13,8 +13,7 @@
   \dodoi{10.1051/0004-6361/201936691}
 
 \bibitem[{{Casado}(2022)}]{Casado2022}
-{Casado}, J. 2022, Universe, arXiv:2110.03587.
-\newblock \doarXiv{2110.03587}
+{Casado}, J. 2022, Universe, 8, 113, \dodoi{10.3390/universe8020113}
 
 \bibitem[{{Castro-Ginard} {et~al.}(2022){Castro-Ginard}, {Jordi}, {Luri},
   {Cantat-Gaudin}, {Carrasco}, {Casamiquela}, {Anders},
@@ -101,10 +100,17 @@
 {Hunt}, E.~L., \& {Reffert}, S. 2021, \aap, 646, A104,
   \dodoi{10.1051/0004-6361/202039341}
 
-\bibitem[{{Pera} {et~al.}(2021){Pera}, {Perren}, {Moitinho}, {Navone}, \&
-  {Vazquez}}]{Pera2021}
-{Pera}, M.~S., {Perren}, G.~I., {Moitinho}, A., {Navone}, H.~D., \& {Vazquez},
-  R.~A. 2021, \aap, 650, A109, \dodoi{10.1051/0004-6361/202040252}
+\bibitem[{{Lindegren} {et~al.}(2021){Lindegren}, {Bastian}, {Biermann},
+  {Bombrun}, {de Torres}, {Gerlach}, {Geyer}, {Hern{\'a}ndez}, {Hilger},
+  {Hobbs}, {Klioner}, {Lammers}, {McMillan}, {Ramos-Lerate},
+  {Steidelm{\"u}ller}, {Stephenson}, \& {van Leeuwen}}]{Lindegren2021}
+{Lindegren}, L., {Bastian}, U., {Biermann}, M., {et~al.} 2021, \aap, 649, A4,
+  \dodoi{10.1051/0004-6361/202039653}
+
+\bibitem[{{Pera} {et~al.}(2021){Pera}, {Perren}, {Moitinho}, {Navone},
+  {Vazquez}, {some}, \& {author}}]{Pera2021}
+{Pera}, M.~S., {Perren}, G.~I., {Moitinho}, A., {et~al.} 2021, \aap, 650, A109,
+  \dodoi{10.1051/0004-6361/202040252}
 
 \bibitem[{{Piatti} \& {Malhan}(2022)}]{Piatti2022}
 {Piatti}, A.~E., \& {Malhan}, K. 2022, \mnras, 511, L1,
