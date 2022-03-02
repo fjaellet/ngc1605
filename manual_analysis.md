@@ -51,13 +51,17 @@ This work presents results from the European Space Agency (ESA) space mission Ga
 
 As in 1. - we follow the typical steps of a manual cluster analysis: 
 1. select a reasonable circular region around the cluster (say, 10 arcmin):
+
 ![selecting a smaller sky region](/im/topcat_step1_canbatllo.png "selecting a smaller sky region")
 
 2. select the peak in proper-motion space:
+
 ![select a region around the obvious peak in the proper-motion diagram](/im/topcat_step2_canbatllo.png "select the peak in proper-motion space")
 
 3. weed out stars with incompatible parallaxes - but we see that in this case this is not necessary: all parallaxes are 2sigma-compatible with the mean parallax of the member candidates:
+
 ![weed out stars with incompatible parallaxes](/im/topcat_step3_canbatllo.png "weed out stars with incompatible parallaxes")
 
 4. look at the colour-magnitude diagram:
+
 ![look at the colour-magnitude diagram](/im/topcat_step4_canbatllo.png "look at the colour-magnitude diagram")
