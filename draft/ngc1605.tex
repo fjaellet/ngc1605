@@ -33,7 +33,7 @@
 \author[0000-0001-5495-9602]{Carme Jordi}
 \affiliation{Institut de Ci\`encies del Cosmos, Universitat de Barcelona (IEEC-UB), Mart\'i i Franqu\`es 1, 08028 Barcelona, Spain}
 
-\author[0000-0001-5495-9602]{Lola Balaguer-Nú\~nez}
+\author[0000-0001-9789-7069]{Lola Balaguer-Nú\~nez}
 \affiliation{Institut de Ci\`encies del Cosmos, Universitat de Barcelona (IEEC-UB), Mart\'i i Franqu\`es 1, 08028 Barcelona, Spain}
 
 %% Note that RNAAS manuscripts DO NOT have abstracts.
@@ -44,7 +44,7 @@
 %% Start the main body of the article. If no sections in the 
 %% research note leave the \section call blank to make the title.
 \section{Abstract}
-The open star cluster NGC 1605 has recently been reported to in fact consist of two clusters (one intermediate-aged and one old) that merged via a flyby capture. Here we show that {\it Gaia} data does not support this scenario. We also report the serendipitous discovery of a new open cluster, Can Batlló 1, with a similar age and distance.
+The open star cluster NGC 1605 has recently been reported to in fact consist of two clusters (one intermediate-aged and one old) that merged via a flyby capture. Here we show that {\it Gaia} data do not support this scenario. We also report the serendipitous discovery of a new open cluster, Can Batlló 1, with a similar age and distance.
 
 \section{Introduction}
 Gravitational captures of star clusters by other clusters are very rare and elusive events that can serve as laboratories for star cluster destruction (e.g. \citealt{Soubiran2018}). There are very few, if any, old binary clusters in the Galaxy \citep{Casado2022}. Recently, \citet{Piatti2022} presented a promising candidate for an open cluster collision of the nearby ($d\sim330$ pc) objects IC 4665 and Collinder 350.
@@ -56,17 +56,14 @@ In the previous literature on NGC 1605 no evidence for such a duplicity was foun
 
 \section{Gaia EDR3 analysis}
 We reanalyse the {\it Gaia} EDR3 data \citep{Gaia2021} down to magnitude $G<19$ in a 30 arcmin circle around the centre of NGC 1605 (Fig. \ref{fig:1}). We first carry out a blind analysis using the three state-of-the-art clustering techniques that have been introduced in the field: The DBSCAN algorithm employed by \citet{Castro2022}, the pyUPMASK code \citep{Pera2021}, and HDBSCAN, the preferred method of \citet{Hunt2021}. 
-While the former algorithms yield only one cluster in the considered region (NGC 1605), HDBSCAN does find another candidate close by - located about 20 arcmin northwest of NGC 1605 and clearly visible as an overdensity in proper-motion space. A manual analysis confirms these results.\footnote{Both the manual and the blind analysis are reproducible at \url{https://github.com/fjaellet/ngc1605}}
+While the first two algorithms yield only one cluster in the considered region (NGC 1605), HDBSCAN does find another candidate close by - located about 20 arcmin northwest of NGC 1605 and clearly visible as an overdensity in proper-motion space. A manual analysis confirms these results.\footnote{Both the manual and the blind analysis are reproducible at \url{https://github.com/fjaellet/ngc1605}}
 
-NGC 1605's stellar density on the sky looks slightly irregular at first sight (it seems to be missing stars in its centre). It is, however, at all radii 2$\sigma$-consistent with a typical King profile. There are also no irregularities in proper motion or in parallax space. We find no evidence for the tidal streams claimed by \citet{Camargo2021} - their claimed location would also be dynamically inconsistent with the proper motion of the putative sub-clusters.
+NGC 1605's stellar density on the sky looks slightly irregular at first sight (it seems to be missing stars in its centre). It is, however, at all radii 2$\sigma$-consistent with a typical \citet{King1962} profile. There are also no irregularities in proper motion or in parallax space. We find no evidence for the tidal streams claimed by \citet{Camargo2021} - their claimed location would also be dynamically inconsistent with the proper motion of the putative sub-clusters.
 The second sequence that \citet{Camargo2021} found in the infra-red colour-magnitude diagram of the region (their Fig. 6) is likely produced by poorly removed field-star contamination (see Sect. 4 of \citealt{CantatAnders2020} for a discussion).
-%After testing several sophisticated membership analyses, we use the automated cluster analysis tool ASteCA \citep{Perren2015, Perren2020} to redetermine the astrophysical parameters based on the available astrometric and photometric data. Memberships are obtained with a Bayesian decontamination algorithm computing the likelihood for being a field or a cluster star based on positions, proper motion, and parallax mesurements. The cluster parameters are then determined with a Bayesian isochrone fit to a family of synthetic PARSEC populations including binaries.
-%The results of the ASteCA analysis, including the best-fit cluster parameters, are shown in Fig. \ref{fig:1}. The parameters are consistent with the DR2 analysis of \citet{Cantat2020} (which used a neural network trained on well-studied clusters), but thanks to the better precision of {\it Gaia} EDR3 the number of bona-fide members has doubled and the results are slightly more precise. In addition to distance ($d=2600\pm$ pc, age, and extinction ($E(B_V)=1.06\pm0.07$), ASteCA also delivers a photometric metallicity ([Fe/H]$=-0.1\pm0.2$), an , a lower limit for the present-day cluster mass ($\sim 2000 M_{\odot}$), and a binary fraction (in the mass range probed by {\it Gaia} EDR3; $M \gtrsim 1.1M_{\odot}$) of $61\pm16\%$. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.88\textwidth,angle=0]{../im/ngc1605_manual_analysis.png}
-%\caption{AsteCA \citep{Perren2015} analysis of the putative binary cluster NGC 1605. Top left panel: Sky distribution of {\it Gaia} EDR3 stars ($G<19$) in the region of NGC 1605. Top right panel: King profile fit of the stellar density distribution (not taking into account membership analysis yet). The outlying point at 1.75 arcsec is $<2\sigma$-consistent with the best-fit King profile. Bottom row: Results of the MCMC isochrone fit to the colour-magnitude diagram of the NGC 1605 members found in the astrometric analysis. Left: Field-cleaned CMD. Right: Best-fit synthetic PARSEC population. Centre: Hess diagram of the residuals (observed minus synthetic). \label{fig:1}}
+\includegraphics[width=0.88\textwidth,angle=0]{./ngc1605_manual_analysis.png}
 \caption{Results of the manual analysis of the putative binary cluster NGC 1605. In each panel, members of NGC 1605 and Can Batlló 1 are highlighted in blue and orange, respectively. Bottom left panel: Sky distribution of {\it Gaia} EDR3 stars ($G<19$), with average proper motions of the two clusters indicated by arrows. Upper left panel: Proper motion diagram. Top middle: Parallax versus magnitude. Top right: density profile (including a King profile with $r_c=2$ arcmin, $r_t=10$ arcmin for comparison). Bottom right panel: Colour-magnitude diagram. Also shown are two PARSEC isochrones (blue: log age $=8.3$, [M/H]$=-0.2$, $A_V=2.6$ mag, $d=2.75$ kpc; orange: log age $=8.25$, [M/H]$=-0.4$, $A_V=2.8$ mag, $d=2.86$ kpc) . 
 \label{fig:1}}
 \end{center}
@@ -78,7 +75,7 @@ In summary, we caution against purely visual photometric analysis of star cluste
 
 %\begin{acknowledgments}
 %\end{acknowledgments}
-
+\vspace{-0.2cm}
 \bibliography{ngc1605}{}
 \bibliographystyle{aasjournal}
 
