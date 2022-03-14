@@ -10,5 +10,5 @@ This repository contains:
 
 This work presents results from the European Space Agency (ESA) space mission Gaia. Gaia data are being processed by the Gaia Data Processing and Analysis Consortium (DPAC). Funding for the DPAC is provided by national institutions, in particular the institutions participating in the Gaia MultiLateral Agreement (MLA). The Gaia mission website is [https://www.cosmos.esa.int/gaia](https://www.cosmos.esa.int/gaia). The Gaia archive website is [https://archives.esac.esa.int/gaia](https://archives.esac.esa.int/gaia).
 
-The zpt.py module (incl the folder coefficients/) was [https://gitlab.com/icc-ub/public/gaiadr3_zeropoint/-/tree/master/](written by Pau Ramos) (ICCUB, 2021).
+The zpt.py module (incl the folder coefficients/) was [written by Pau Ramos](https://gitlab.com/icc-ub/public/gaiadr3_zeropoint/-/tree/master/) (ICCUB, 2021).
 All other files written/prepared by: Friedrich Anders (ICCUB, 2022).
