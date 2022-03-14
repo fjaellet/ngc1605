@@ -26,16 +26,11 @@ We follow the typical steps of a manual analysis using [TOPCAT](https://www.star
 
 ## 2. Assuming NGC 1605 is in fact a double cluster?
 
-To know what we should look for, we start from Fig. 1 of Camargo (2021):
-![Camargo 2021, Fig. 1](/im/camargo2021_fig1.png "Camargo 2021, Fig. 1")
-
-We make a manual selection on the sky:
+To know what we should look for, we start from [https://iopscience-iop-org.sire.ub.edu/article/10.3847/1538-4357/ac2835#apjac2835f1](Fig. 1) of Camargo (2021). We make a manual selection of the 2 putative sub-clusters on the sky:
 
 ![selecting sub-clusters](/im/topcat_step1_ab.png "selecting sub-clusters")
 
-But then we immediatley see that the 2 manually "sub-clusters" (apart from being heavily contaminated by the field) overlap in proper-motion space and in the CMD: hence they cannot be considered separate entities:
-
-We make a manual selection on the sky:
+But then we immediately see that the 2 manually selected "sub-clusters" (apart from being heavily contaminated by the field) overlap in proper-motion space and in the CMD: hence they cannot be considered separate entities:
 
 ![Proper-motion diagram](/im/topcat_step2_ab.png "Proper-motion diagram")
 
