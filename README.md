@@ -1,4 +1,5 @@
 # ngc1605
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6353880.svg)](https://doi.org/10.5281/zenodo.6353880)
 ## Analysing the open cluster NGC 1605 with Gaia EDR3
 
 This repository contains:
